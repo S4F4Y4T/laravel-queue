@@ -10,7 +10,7 @@ class Queue extends Controller
 {
     public function exec()
     {
-        $response = Http::get('https://jsonplaceholder.typicode.com/users?_start=0&_limit=5'); // Replace with the API URL
+        $response = Http::get('https://jsonplaceholder.typicode.com/users?_start=0&_limit=10'); // Replace with the API URL
 
         if ($response->successful()) {
             $data = $response->json();
